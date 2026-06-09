@@ -1,0 +1,503 @@
+[
+  {
+    "file": "static/videos/sim_screwdriver_plume.mp4",
+    "slide": 1,
+    "slide_title": "Sim. Screwdriver",
+    "shape": "screw_sim_ours",
+    "shape_id": "6",
+    "source": "ppt/media/media1.mp4",
+    "start_sec": 0.0,
+    "duration_sec": 6.0,
+    "crop": {
+      "l": 23330,
+      "t": 26054,
+      "r": 38239,
+      "b": 0
+    },
+    "output_size": [
+      490,
+      708
+    ]
+  },
+  {
+    "file": "static/videos/sim_screwdriver_uwm.mp4",
+    "slide": 1,
+    "slide_title": "Sim. Screwdriver",
+    "shape": "screw_sim_uwm",
+    "shape_id": "11",
+    "source": "ppt/media/media2.mp4",
+    "start_sec": 0.0,
+    "duration_sec": 8.334,
+    "crop": {
+      "l": 23330,
+      "t": 25988,
+      "r": 38239,
+      "b": 0
+    },
+    "output_size": [
+      490,
+      710
+    ]
+  },
+  {
+    "file": "static/videos/sim_screwdriver_flow_q_learning.mp4",
+    "slide": 1,
+    "slide_title": "Sim. Screwdriver",
+    "shape": "screw_sim_fql",
+    "shape_id": "12",
+    "source": "ppt/media/media3.mp4",
+    "start_sec": 0.0,
+    "duration_sec": 8.334,
+    "crop": {
+      "l": 23330,
+      "t": 25988,
+      "r": 38239,
+      "b": 0
+    },
+    "output_size": [
+      490,
+      710
+    ]
+  },
+  {
+    "file": "static/videos/sim_screwdriver_decision_diffuser.mp4",
+    "slide": 1,
+    "slide_title": "Sim. Screwdriver",
+    "shape": "screw_sim_dd",
+    "shape_id": "13",
+    "source": "ppt/media/media4.mp4",
+    "start_sec": 0.0,
+    "duration_sec": 8.334,
+    "crop": {
+      "l": 23330,
+      "t": 25988,
+      "r": 38239,
+      "b": 0
+    },
+    "output_size": [
+      490,
+      710
+    ]
+  },
+  {
+    "file": "static/videos/sim_disk_flicking_plume.mp4",
+    "slide": 2,
+    "slide_title": "Sim. Disk Flicking",
+    "shape": "disk_flick_ours",
+    "shape_id": "4",
+    "source": "ppt/media/media5.mp4",
+    "start_sec": 0.0,
+    "duration_sec": 5.5,
+    "crop": {
+      "l": 16202,
+      "t": 12920,
+      "r": 0,
+      "b": 0
+    },
+    "output_size": [
+      536,
+      416
+    ]
+  },
+  {
+    "file": "static/videos/sim_disk_flicking_uwm_left_top.mp4",
+    "slide": 2,
+    "slide_title": "Sim. Disk Flicking",
+    "shape": "disk_flick_uwm_sim",
+    "shape_id": "5",
+    "source": "ppt/media/media6.mp4",
+    "start_sec": 0.0,
+    "duration_sec": 5.5,
+    "crop": {
+      "l": 16202,
+      "t": 12920,
+      "r": 0,
+      "b": 0
+    },
+    "output_size": [
+      536,
+      416
+    ],
+    "crop_override_note": "Regenerated with left/top discard only; previous PowerPoint crop discarded right/bottom."
+  },
+  {
+    "file": "static/videos/sim_disk_flicking_flow_q_learning.mp4",
+    "slide": 2,
+    "slide_title": "Sim. Disk Flicking",
+    "shape": "disk_flick_fql_12",
+    "shape_id": "26",
+    "source": "ppt/media/media7.mp4",
+    "start_sec": 0.0,
+    "duration_sec": 5.5,
+    "crop": {
+      "l": 16627,
+      "t": 13057,
+      "r": 0,
+      "b": 0
+    },
+    "output_size": [
+      532,
+      416
+    ]
+  },
+  {
+    "file": "static/videos/sim_disk_flicking_decision_diffuser.mp4",
+    "slide": 2,
+    "slide_title": "Sim. Disk Flicking",
+    "shape": "disk_flick_dd_12",
+    "shape_id": "27",
+    "source": "ppt/media/media8.mp4",
+    "start_sec": 0.0,
+    "duration_sec": 5.5,
+    "crop": {
+      "l": 16175,
+      "t": 12586,
+      "r": 0,
+      "b": 0
+    },
+    "output_size": [
+      536,
+      418
+    ]
+  },
+  {
+    "file": "static/videos/sim_valve_plume.mp4",
+    "slide": 4,
+    "slide_title": "Sim. Valve",
+    "shape": "Ours_valve",
+    "shape_id": "6",
+    "source": "ppt/media/media9.mp4",
+    "start_sec": 0.0,
+    "duration_sec": 5.5,
+    "crop": {
+      "l": 19784,
+      "t": 0,
+      "r": 26589,
+      "b": 0
+    },
+    "output_size": [
+      342,
+      478
+    ]
+  },
+  {
+    "file": "static/videos/sim_valve_uwm.mp4",
+    "slide": 4,
+    "slide_title": "Sim. Valve",
+    "shape": "uwm_valve",
+    "shape_id": "7",
+    "source": "ppt/media/media10.mp4",
+    "start_sec": 0.0,
+    "duration_sec": 5.5,
+    "crop": {
+      "l": 19785,
+      "t": 0,
+      "r": 26588,
+      "b": 0
+    },
+    "output_size": [
+      342,
+      478
+    ]
+  },
+  {
+    "file": "static/videos/sim_valve_flow_q_learning.mp4",
+    "slide": 4,
+    "slide_title": "Sim. Valve",
+    "shape": "fql_valve",
+    "shape_id": "14",
+    "source": "ppt/media/media11.mp4",
+    "start_sec": 0.0,
+    "duration_sec": 5.5,
+    "crop": {
+      "l": 19785,
+      "t": 0,
+      "r": 26588,
+      "b": 0
+    },
+    "output_size": [
+      342,
+      478
+    ]
+  },
+  {
+    "file": "static/videos/sim_valve_decision_diffuser.mp4",
+    "slide": 4,
+    "slide_title": "Sim. Valve",
+    "shape": "dd_valve",
+    "shape_id": "17",
+    "source": "ppt/media/media12.mp4",
+    "start_sec": 0.0,
+    "duration_sec": 5.5,
+    "crop": {
+      "l": 19785,
+      "t": 0,
+      "r": 26588,
+      "b": 0
+    },
+    "output_size": [
+      342,
+      478
+    ]
+  },
+  {
+    "file": "static/videos/sim_bucket_plume.mp4",
+    "slide": 5,
+    "slide_title": "DexArt Bucket",
+    "shape": "ours",
+    "shape_id": "6",
+    "source": "ppt/media/media13.mp4",
+    "start_sec": 0.0,
+    "duration_sec": 6.75,
+    "crop": {
+      "l": 28242,
+      "t": 14147,
+      "r": 5353,
+      "b": 0
+    },
+    "output_size": [
+      668,
+      864
+    ]
+  },
+  {
+    "file": "static/videos/sim_bucket_uwm.mp4",
+    "slide": 5,
+    "slide_title": "DexArt Bucket",
+    "shape": "uwm",
+    "shape_id": "7",
+    "source": "ppt/media/media14.mp4",
+    "start_sec": 0.0,
+    "duration_sec": 12.625,
+    "crop": {
+      "l": 28584,
+      "t": 14147,
+      "r": 5011,
+      "b": 0
+    },
+    "output_size": [
+      668,
+      864
+    ]
+  },
+  {
+    "file": "static/videos/sim_bucket_flow_q_learning.mp4",
+    "slide": 5,
+    "slide_title": "DexArt Bucket",
+    "shape": "fql",
+    "shape_id": "8",
+    "source": "ppt/media/media15.mp4",
+    "start_sec": 0.0,
+    "duration_sec": 12.625,
+    "crop": {
+      "l": 28583,
+      "t": 14147,
+      "r": 4669,
+      "b": 0
+    },
+    "output_size": [
+      672,
+      864
+    ]
+  },
+  {
+    "file": "static/videos/sim_bucket_decision_diffuser.mp4",
+    "slide": 5,
+    "slide_title": "DexArt Bucket",
+    "shape": "decision_diffuser",
+    "shape_id": "9",
+    "source": "ppt/media/media16.mp4",
+    "start_sec": 0.0,
+    "duration_sec": 12.625,
+    "crop": {
+      "l": 28925,
+      "t": 14147,
+      "r": 4328,
+      "b": 0
+    },
+    "output_size": [
+      672,
+      864
+    ]
+  },
+  {
+    "file": "static/videos/hardware_screwdriver_plume_1.mp4",
+    "slide": 6,
+    "slide_title": "Hardware Screwdriver: PLUME (Ours)",
+    "shape": "screw_hardware_ours",
+    "shape_id": "7",
+    "source": "ppt/media/media17.mp4",
+    "start_sec": 11.289,
+    "duration_sec": 3.899,
+    "crop": {
+      "l": 37265,
+      "t": 0,
+      "r": 36622,
+      "b": 17342
+    },
+    "output_size": [
+      1002,
+      1784
+    ]
+  },
+  {
+    "file": "static/videos/hardware_screwdriver_plume_2.mp4",
+    "slide": 6,
+    "slide_title": "Hardware Screwdriver: PLUME (Ours)",
+    "shape": "screw_hardware_ours_4",
+    "shape_id": "8",
+    "source": "ppt/media/media18.mp4",
+    "start_sec": 11.1,
+    "duration_sec": 6.273,
+    "crop": {
+      "l": 37265,
+      "t": 0,
+      "r": 36622,
+      "b": 17342
+    },
+    "output_size": [
+      1002,
+      1784
+    ]
+  },
+  {
+    "file": "static/videos/hardware_screwdriver_plume_3.mp4",
+    "slide": 6,
+    "slide_title": "Hardware Screwdriver: PLUME (Ours)",
+    "shape": "screw_hardware_ours_14",
+    "shape_id": "12",
+    "source": "ppt/media/media19.mp4",
+    "start_sec": 11.068,
+    "duration_sec": 6.159,
+    "crop": {
+      "l": 37265,
+      "t": 0,
+      "r": 36622,
+      "b": 17342
+    },
+    "output_size": [
+      1002,
+      1784
+    ]
+  },
+  {
+    "file": "static/videos/hardware_screwdriver_uwm.mp4",
+    "slide": 7,
+    "slide_title": "Hardware Screwdriver: Baselines",
+    "shape": "screw_hardware_uwm",
+    "shape_id": "3",
+    "source": "ppt/media/media20.mp4",
+    "start_sec": 5.42,
+    "duration_sec": 15.5,
+    "crop": {
+      "l": 36391,
+      "t": 0,
+      "r": 36445,
+      "b": 12213
+    },
+    "output_size": [
+      1042,
+      1896
+    ]
+  },
+  {
+    "file": "static/videos/hardware_screwdriver_flow_q_learning.mp4",
+    "slide": 7,
+    "slide_title": "Hardware Screwdriver: Baselines",
+    "shape": "screw_hardware_fql_1",
+    "shape_id": "4",
+    "source": "ppt/media/media21.mp4",
+    "start_sec": 4.704,
+    "duration_sec": 14.864,
+    "crop": {
+      "l": 37020,
+      "t": 0,
+      "r": 35816,
+      "b": 12213
+    },
+    "output_size": [
+      1042,
+      1896
+    ]
+  },
+  {
+    "file": "static/videos/hardware_screwdriver_decision_diffuser.mp4",
+    "slide": 7,
+    "slide_title": "Hardware Screwdriver: Baselines",
+    "shape": "screw_hardware_dd_1",
+    "shape_id": "7",
+    "source": "ppt/media/media22.mp4",
+    "start_sec": 35.0,
+    "duration_sec": 25.0,
+    "crop": {
+      "l": 40503,
+      "t": 0,
+      "r": 32334,
+      "b": 12213
+    },
+    "output_size": [
+      1042,
+      1896
+    ]
+  },
+  {
+    "file": "static/videos/hardware_valve_plume_3.mp4",
+    "slide": 8,
+    "slide_title": "Hardware Valve: PLUME (Ours)",
+    "shape": "Fixed_2",
+    "shape_id": "9",
+    "source": "ppt/media/media23.mp4",
+    "start_sec": 3.5,
+    "duration_sec": 23.0,
+    "crop": {
+      "l": 39424,
+      "t": 0,
+      "r": 23123,
+      "b": 0
+    },
+    "output_size": [
+      1438,
+      2158
+    ]
+  },
+  {
+    "file": "static/videos/hardware_valve_plume_1.mp4",
+    "slide": 8,
+    "slide_title": "Hardware Valve: PLUME (Ours)",
+    "shape": "Fixed_0",
+    "shape_id": "10",
+    "source": "ppt/media/media24.mp4",
+    "start_sec": 7.0,
+    "duration_sec": 21.0,
+    "crop": {
+      "l": 38010,
+      "t": 0,
+      "r": 24537,
+      "b": 0
+    },
+    "output_size": [
+      1438,
+      2158
+    ]
+  },
+  {
+    "file": "static/videos/hardware_valve_plume_2.mp4",
+    "slide": 8,
+    "slide_title": "Hardware Valve: PLUME (Ours)",
+    "shape": "Fixed_1",
+    "shape_id": "11",
+    "source": "ppt/media/media25.mp4",
+    "start_sec": 7.0,
+    "duration_sec": 23.3,
+    "crop": {
+      "l": 38989,
+      "t": 0,
+      "r": 23558,
+      "b": 0
+    },
+    "output_size": [
+      1438,
+      2158
+    ]
+  }
+]

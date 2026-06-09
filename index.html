@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Anonymous project page for a double-blind paper submission on PLUME." />
+  <meta property="og:title" content="Paper Title Placeholder" />
+  <meta property="og:description" content="Anonymous project page for a double-blind paper submission on PLUME." />
+  <meta property="og:url" content="https://plume-world-model.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:title" content="Paper Title Placeholder">
+  <meta name="twitter:description" content="Anonymous project page for a double-blind paper submission on PLUME.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="PLUME, world model, dexterous manipulation, reinforcement learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Paper Title Placeholder</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Google+Sans&family=Noto+Sans&family=Castoro&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css?v=3">
+
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">PLUME: Probabilistic Latent Unified World Modeling and Parameter Estimation for Multi-Finger Manipulation</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Dexterous manipulation with multi-finger hands can be sensitive to physical parameters such as object shape, pose, and friction coefficients.
+              While simulation enables large-scale data collection with known parameter values, simulation-trained policies must still handle uncertainty at deployment, where the true parameters and therefore the true dynamics are unknown.
+              Standard domain randomization strategies may be insufficient for precise tasks like screwdriver turning, as manipulation strategies may need to change depending on specific parameter values.
+              To address this, we propose Probabilistic Latent Unified world Modeling and parameter Estimation (PLUME), a world model that jointly learns to evolve a belief over parameter values as well as the system dynamics conditioned on those parameters.
+              We learn a latent space to jointly represent multiple qualitatively different physical parameters along with rewards, themselves functions of partially-observable variables, to inform planning.
+              Our novel learning framework leads to efficient alignment of the world model to true dynamics through online parameter inference as opposed to re-training or fine-tuning.
+              We evaluate our method on simulated screwdriver turning, valve turning, bucket lifting, and disk flicking tasks, as well as a hardware screwdriver turning task, where we achieve successful zero-shot transfer of our simulation-trained policy and outperform state-of-the-art offline reinforcement learning and world-model-augmented behavior cloning baselines.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light simulation-video-section">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-3 has-text-centered">Simulation</h2>
+
+      <div class="simulation-method">
+        <h3 class="title is-4">Screwdriver</h3>
+        <div class="columns is-multiline is-centered">
+          <div class="column is-one-quarter-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/sim_screwdriver_plume.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered plume">PLUME <small>(Ours)</small></figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-quarter-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/sim_screwdriver_uwm.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered">Unified World Model</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-quarter-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/sim_screwdriver_flow_q_learning.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered">Flow Q-Learning</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-quarter-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/sim_screwdriver_decision_diffuser.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered">Decision Diffuser</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="simulation-method">
+        <h3 class="title is-4">Disk Flicking</h3>
+        <div class="columns is-multiline is-centered">
+          <div class="column is-one-quarter-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/sim_disk_flicking_plume.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered plume">PLUME <small>(Ours)</small></figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-quarter-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/sim_disk_flicking_uwm_left_top.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered">Unified World Model</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-quarter-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/sim_disk_flicking_flow_q_learning.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered">Flow Q-Learning</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-quarter-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/sim_disk_flicking_decision_diffuser.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered">Decision Diffuser</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="simulation-method">
+        <h3 class="title is-4">Valve</h3>
+        <div class="columns is-multiline is-centered">
+          <div class="column is-one-quarter-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/sim_valve_plume.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered plume">PLUME <small>(Ours)</small></figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-quarter-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/sim_valve_uwm.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered">Unified World Model</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-quarter-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/sim_valve_flow_q_learning.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered">Flow Q-Learning</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-quarter-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/sim_valve_decision_diffuser.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered">Decision Diffuser</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="simulation-method">
+        <h3 class="title is-4">DexArt Bucket</h3>
+        <div class="columns is-multiline is-centered">
+          <div class="column is-one-quarter-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/sim_bucket_plume.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered plume">PLUME <small>(Ours)</small></figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-quarter-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/sim_bucket_uwm.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered">Unified World Model</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-quarter-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/sim_bucket_flow_q_learning.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered">Flow Q-Learning</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-quarter-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/sim_bucket_decision_diffuser.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered">Decision Diffuser</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Hardware</h2>
+
+      <div class="simulation-method">
+        <h3 class="title is-4">Screwdriver</h3>
+        <div class="columns is-multiline is-centered">
+          <div class="column is-one-third-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/hardware_screwdriver_plume_1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered plume">PLUME <small>(Ours)</small> Trial 1</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-third-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/hardware_screwdriver_plume_2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered plume">PLUME <small>(Ours)</small> Trial 2</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-third-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/hardware_screwdriver_plume_3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered plume">PLUME <small>(Ours)</small> Trial 3</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-third-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/hardware_screwdriver_uwm.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered">Unified World Model</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-third-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/hardware_screwdriver_flow_q_learning.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered">Flow Q-Learning</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-third-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/hardware_screwdriver_decision_diffuser.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered">Decision Diffuser</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="simulation-method">
+        <h3 class="title is-4">Valve</h3>
+        <div class="columns is-multiline is-centered">
+          <div class="column is-one-third-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/hardware_valve_plume_1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered plume">PLUME <small>(Ours)</small> Trial 1</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-third-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/hardware_valve_plume_2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered plume">PLUME <small>(Ours)</small> Trial 2</figcaption>
+            </figure>
+          </div>
+          <div class="column is-one-third-desktop is-half-tablet">
+            <figure class="video-container plume-video-card">
+              <video controls preload="metadata">
+                <source src="static/videos/hardware_valve_plume_3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered plume">PLUME <small>(Ours)</small> Trial 3</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          Website template adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
